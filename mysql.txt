@@ -1,0 +1,12 @@
+Car Rental Database System(Java Project)
+
+create database carrentalsystem;
+use carrentalsystem;
+
+create table carregistration(id int not null auto_increment primary key,car_no varchar(255), make varchar(255), model varchar(255), available varchar(255));
+
+create table customer(id int not null auto_increment primary key,cust_id varchar(255),name varchar(255),address varchar(255),mobile varchar(10));
+
+create table rental(id int not null auto_increment primary key,car_id varchar(255),cust_id varchar(255),fee varchar(11),date varchar(255),due varchar(255));
+
+create table returncar(id int not null auto_increment primary key,carid varchar(255),custid varchar(255),return_date varchar(255),elap varchar(11),fine varchar(11));
